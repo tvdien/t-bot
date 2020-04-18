@@ -1,0 +1,3 @@
+[submodule "external-scripts/t-home"]
+	path = external-scripts/t-home
+	url = git@github.com:tvdien/t-home.git

@@ -13,7 +13,7 @@ module.exports = function(robot) {
 
   robot.hear(/Smart bot turn (on|off) air conditioner/i, function(msg) {
     let airCmdText = msg.match[1];
-    let cmd = `cd external-scripts/smart-home && python3 irrp.py -p -g17 -f codes air:${airCmdText}`;
+    let cmd = `cd external-scripts/t-home && python3 irrp.py -p -g17 -f codes air:${airCmdText}`;
     if (!process.env.SMART_HOME) {
       msg.send('System environment is not defined');
       msg.send(cmd);
